@@ -1,0 +1,220 @@
+@keyframes calc-box-shadow {
+  0%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #00E6F0,
+              inset 0 0 40px #00E6F0,
+              0 0 50px #00E6F0,
+              inset 0 0 60px #00E6F0;}
+  20%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #00FF00,
+              inset 0 0 40px #00FF00,
+              0 0 50px #00FF00,
+              inset 0 0 60px #00FF00;}
+  40%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #FFFF00,
+              inset 0 0 40px #FFFF00,
+              0 0 50px #FFFF00,
+              inset 0 0 60px #FFFF00;}
+  60%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #FF6800,
+              inset 0 0 40px #FF6800,
+              0 0 50px #FF6800,
+              inset 0 0 60px #FF6800;}
+  80%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #FF14AB,
+              inset 0 0 40px #FF14AB,
+              0 0 50px #FF14AB,
+              inset 0 0 60px #FF14AB;}
+  100%   {box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px #00E6F0,
+              inset 0 0 40px #00E6F0,
+              0 0 50px #00E6F0,
+              inset 0 0 60px #00E6F0;}
+}
+
+@keyframes calc-text-shadow {
+  80%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #00FF00,
+              0 0 40px #00FF00,
+              0 0 50px #00FF00,
+              0 0 60px #00FF00;}
+  100%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #FF6800,
+              0 0 40px #FF6800,
+              0 0 50px #FF6800,
+              0 0 60px #FF6800;}
+  0%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #FF6800,
+              0 0 40px #FF6800,
+              0 0 50px #FF6800,
+              0 0 60px #FF6800;}
+  20%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #FFFF00,
+              0 0 40px #FFFF00,
+              0 0 50px #FFFF00,
+              0 0 60px #FFFF00;}
+  40%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #FF14AB,
+              0 0 40px #FF14AB,
+              0 0 50px #FF14AB,
+              0 0 60px #FF14AB;}
+  60%   {text-shadow: 0 0 10px #DDD,
+              0 0 20px #DDD,
+              0 0 30px #00E6F0,
+              0 0 40px #00E6F0,
+              0 0 50px #00E6F0,
+              0 0 60px #00E6F0;}
+}
+
+@keyframes calc-screen-shake {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(5deg);}
+  20% {transform: rotate(-5deg);}
+  30% {transform: rotate(3deg);}
+  40% {transform: rotate(-3deg);}
+  50% {transform: rotate(1deg);}
+  60% {transform: rotate(-1deg);}
+  70% {transform: rotate(0.5deg);}
+  80% {transform: rotate(-0.5deg);}
+  90% {transform: rotate(0.1deg);}
+  100% {transform: rotate(0deg);}
+}
+
+body {
+  background-image: linear-gradient(to top right, #000, #111);
+  min-height: 700px;
+}
+
+#calcBody {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 350px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px white,
+              inset 0 0 20px white,
+              0 0 30px white,
+              inset 0 0 40px white,
+              0 0 50px #ff0084,
+              inset 0 0 60px #ff0084;
+  animation-name: calc-box-shadow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#calcHeading {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#calcBody > #calcHeading > h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 32px;
+  color: white;
+  animation-name: calc-text-shadow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#calcBody > #calcHeading > h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #DDD;
+  text-shadow: 0 0 10px red,
+               0 0 20px red,
+               0 0 30px red,
+               0 0 40px red;
+}
+
+#calcScreen {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#calcScreen > #calcInput {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+              inset 0 0 20px rgba(255, 0, 0, 0.5),
+              0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+#calcButtons {
+  padding-bottom: 30px;
+}
+
+#calcButtons > .row {
+  padding: 8px 0;
+}
+
+#calcButtons > .row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > #calcBody > #calcButtons > .row > div > button {
+  text-align: center;
+  font-size: 12px;
+  padding: 6px 6px;
+  background-color: rgba(255, 255, 255, 0.0);
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5),
+              inset 0 0 20px rgba(0, 0, 255, 0.5),
+              0 0 30px rgba(0, 0, 255, 0.5);
+}
+
+.container > #calcBody > #calcButtons > .row > div > .redBtn {
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+              inset 0 0 20px rgba(255, 0, 0, 0.5),
+              0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.container > #calcBody > #calcButtons > .row > div > .operatorBtn {
+  box-shadow: 0 0 10px rgba(127, 0, 255, 0.5),
+              inset 0 0 20px rgba(127, 0, 255, 0.5),
+              0 0 30px rgba(127, 0, 255, 0.5);
+}
+
+.container > #calcBody > #calcButtons > .row > #equalsButton > button {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5),
+              inset 0 0 20px rgba(0, 255, 0, 0.5),
+              0 0 30px rgba(0, 255, 0, 0.5);
+}
+
+.container > #calcBody > #calcButtons > .row > div > button:focus {
+  outline: 0;
+}
+
+.container > #calcBody > #calcButtons > .row > div > .numBtn:focus {
+  background-color: rgba(0, 0, 255, 0.5) !important;
+  transition': 0.5s;
+}
+
+.container > #calcBody > #calcButtons > .row > div > .operatorBtn:focus {
+  background-color: rgba(127, 0, 255, 0.5) !important;
+  transition': 0.5s;
+}
+
+.container > #calcBody > #calcButtons > .row > #equalsButton > button:focus {
+  background-color: rgba(0, 255, 0, 0.5) !important;
+  transition': 0.5s;
+}

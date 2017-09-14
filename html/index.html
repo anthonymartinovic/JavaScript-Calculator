@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neon Calculator</title>
+  <meta name="author" content="Anthony Martinovic">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS links -->
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- bootstrap(CDN) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- main -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300,400,500">
+</head>
+<body>
+  <div class="container">
+    <div id="calcBody">
+      <div id="calcHeading">
+        <h1>neon calculator</h1>
+        <h2>DIGITAL CALCULATOR</h2>
+      </div>
+      <div id="calcScreen">
+        <span id="calcInput" type="text" class="form-control"><span>
+      </div>
+      <div id="calcButtons">
+        <div class="row">
+          <div class="col-xs-6"><button type="button" class="btn btn-default redBtn">AC</button></div>
+          <div class="col-xs-3"><button id="ceButton" type="button" class="btn btn-default redBtn" disabled>CE</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default operatorBtn">/</button></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">9</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">8</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">7</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default operatorBtn">*</button></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">6</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">5</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">4</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default operatorBtn">-</button></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">3</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">2</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">1</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default operatorBtn">+</button></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3"><button type="button" class="btn btn-default numBtn">0</button></div>
+          <div class="col-xs-3"><button type="button" class="btn btn-default">.</button></div>
+          <div id="equalsButton" class="col-xs-6"><button type="button" class="btn btn-default">=</button></div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- js links -->
+  <!-- jQuery(CDN) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- jQuery-ui(CDN) -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- bootstrap(CDN) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- main -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
