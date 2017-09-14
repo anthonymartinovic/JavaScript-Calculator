@@ -1,5 +1,5 @@
 # JavaScript-Calculator
-PROJECT: A calculator for web browsers.
+PROJECT: A web browser calculator.
 
 TECHNOLOGIES USED:
 - HTML5
