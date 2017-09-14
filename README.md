@@ -1,4 +1,4 @@
-# JavaScript-Calculator
+# javascript-calculator
 PROJECT: A web browser calculator.
 
 TECHNOLOGIES USED:
@@ -6,4 +6,4 @@ TECHNOLOGIES USED:
 - CSS3
 - JavaScript (ES6 compiled to ES5)
 
-DEMO LINK: http://htmlpreview.github.com/?https://github.com/anthonymartinovic/JavaScript-Calculator/html/index.html
+DEMO LINK: http://htmlpreview.github.io/?https://github.com/anthonymartinovic/javascript-calculator/blob/master/html/index.html
